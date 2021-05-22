@@ -5,7 +5,7 @@ body {
 }
 
 a { 
-    color:#31e048;
+    color:#0b21ec;
     text-decoration:none; 
 }
 
@@ -35,7 +35,7 @@ h2 {
 }
 
 p.date { 
-    color:rgb(147, 211, 43);
+    color:rgb(13, 62, 197);
     font-family: georgia, serif;
     font-size: 12px;
     font-style: italic; 
@@ -56,9 +56,9 @@ label {
 }
 input, textarea { 
     clear:both;
-    float:left;
+    float:right;
     margin:0 0 10px;
-    background:#0f8356;
+    background:#074ed1;
     border:0;
     padding:6px 10px;
     font-size:12px;
