@@ -1,78 +1,88 @@
+
 body { 
     margin:0;
     padding:0;
-    font-family:helvetica, sans-serif; 
+    font-family:helvetica, sans-serif;  
 }
 
 a { 
-    color:#0b21ec;
+    color:#00abff;
     text-decoration:none; 
 }
 
 h1 { 
     font-weight:normal;
-    border-bottom:1px solid rgb(212, 42, 42);
+    border-bottom:1px solid #bbb;
     padding:0 0 10px 0;
+    float:center;
+
 }
 
 h2 {
     font-weight:normal;
     margin:30px 0 0;
+    float:right;
+
 }
 
 #content { 
-    float:left;
+    float:right;
     width:60%;
     padding:0 0 0 30px; 
+
 }
 
 #sidebar { 
-    float:right;
+    float:left;
     width:30%;
     padding:10px;
-    background:#8a1376; 
+    background:#efefef; 
     height:100%;
 }
 
 p.date { 
-    color:rgb(13, 62, 197);
+    color:#ccc;
     font-family: georgia, serif;
     font-size: 12px;
     font-style: italic; 
+    float:right;
+
 }
 
 /* pagination */
 .pagination { 
     margin:40px 0; 
     font-weight:bold;
+    float:left;
+
 }
 
 /* forms */
 label { 
-    float:left;
+    float:right;
     clear:both;
     color:#333;
     margin-bottom:4px; 
 }
 input, textarea { 
     clear:both;
-    float:right;
+    float:left;
     margin:0 0 10px;
-    background:#074ed1;
+    background:#ededed;
     border:0;
     padding:6px 10px;
     font-size:12px;
 }
 input[type=submit] {
     font-weight:bold;
-    background:#4f0694;
-    color:rgb(150, 138, 219);
+    background:#00abff;
+    color:#fff;
     padding:10px 20px;
     font-size:14px;
     text-transform:uppercase; 
 }
 .errorlist { 
-    color:#da8d1b;
+    color:#cc0033;
     float:left;
     clear:both;
     padding-left:10px; 
@@ -83,10 +93,10 @@ input[type=submit] {
     padding:10px;
 }
 .comment:nth-child(even) {
-    background:#13c9cf;
+    background:#efefef;
 }
 .comment .info {
     font-weight:bold;
     font-size:12px;
-    color:rgb(90, 42, 100);
+    color:#666;
 }

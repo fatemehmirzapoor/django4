@@ -2,9 +2,12 @@
 {% block title %}{{ post.title }}{% endblock %}
 {% block content %}
 <h1>{{ post.title }}</h1>
+
 <p class="date">
+
     Published {{ post.publish }} by {{ post.user }}
 </p>
-<p> مشخصات </p>
+<font face='Bnazenin,Tahoma,Arial,Serif'> مشخصات </font>
+
 {{ post.body|linebreaks }}
 {% endblock %}
