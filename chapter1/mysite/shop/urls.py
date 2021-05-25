@@ -7,4 +7,6 @@ urlpatterns = [
     path('<int:year>/<int:month>/<int:day>/<slug:post>/',
       shop_detail,
       name='post_detail'),
+    # path('',main_list, name='main_list'),
+
     ]

@@ -1,0 +1,20 @@
+{% extends "shop/base.html" %}
+{% block title %}list shop{% endblock %}
+{% block content %}
+<h1>فروشگاه لباس</h1>
+{% for post in posts %}
+<h2>
+     <a href="{{ post.get_absolute_url }}"> 
+        {{ post.title }}
+     </a> 
+</h2>
+
+<p  class="date" >
+    Published {{ post.publish }} by {{ post.user }}
+</p>
+
+{{ post.body|truncatewords:20|linebreaks }}
+<hr>
+{% endfor %}
+{% include "pagination.html" with page=posts %}
+{% endblock %}
