@@ -3,6 +3,4 @@ from .models import Main
 
 def main_list(request):
     posts_all = Main.objects.all()
-    return render(request,
-                    'main/post/index.html',
-                    {'posts': posts_all})
+    return render(request,'main/post/index.html',{'posts': posts_all})
