@@ -16,6 +16,7 @@ class shop(models.Model):
     updated = models.DateTimeField(auto_now=True)
     price = models.IntegerField(default=1000)
     Discounted_price = models.IntegerField(default=1000)
+    count = models.IntegerField(default=1)
 
     # status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
 

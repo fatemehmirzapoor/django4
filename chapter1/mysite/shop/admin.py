@@ -5,7 +5,7 @@ from .models import shop
 
 @admin.register(shop)
 class shopAdmin(admin.ModelAdmin):
-    list_display = ('title', 'slug', 'user', 'publish','price','Discounted_price')
+    list_display = ('title', 'slug', 'user', 'publish','price','Discounted_price','count')
     list_filter = ('created', 'publish', 'user')
     search_fields = ('title', 'body')
     prepopulated_fields = {'slug': ('title',)}
