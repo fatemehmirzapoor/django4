@@ -34,9 +34,6 @@ def shop_detail(request, year, month, day, post):
         return render(request,'shop/post/detali.html',{'post': post})
 
 
-# def main_list(request):
-#         post1 = shop.objects.all()
-#         return render(request,'shop/post/index.html', {'posts': post1})
 
 
       

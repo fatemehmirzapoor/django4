@@ -9,5 +9,4 @@ class MainAdmin(admin.ModelAdmin):
     search_fields = ('title',)
     prepopulated_fields = {'slug': ('title',)}
     raw_id_fields = ('author',)
-    # date_hierarchy = 'publish'
-    # ordering = ('publish',)
+   

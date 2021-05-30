@@ -1,4 +1,3 @@
-
 {% load static %}
 
 <!DOCTYPE html>
@@ -27,6 +26,8 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/megamenu.css' %}" rel="stylesheet">
     <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet">
+    <link href="{% static 'css/shop.css' %}" rel="stylesheet">
+
 
     <!-- Farsi WebFont: BFont.ir -->
 
@@ -46,7 +47,6 @@
 </head>
 
 <body class="boxed rtl">
-
 <!-- Loader -->
 <div id="loader-wrapper" class="off">
     <div class="cube-wrapper">
@@ -318,7 +318,7 @@
                                 </form>
                                 <!-- /form -->
                                 <div class="title">یا</div>
-                                <div class="bottom-text">ساخت حساب<a href="account-create.html"> کاربری جدید </a></div>
+                                <div class="bottom-text">ساخت حساب<a href="main/account-create.html"> کاربری جدید </a></div>
                             </div>
                         </div>
                         <!-- /Header Account -->
@@ -348,7 +348,7 @@
                     <div class="megamenu fadein blackout">
                         <ul class="nav">
                             <li class="simple-dropdown">
-                                <a href="index.html">صفحه اصلی</a>
+                                <a href="post/index.html">صفحه اصلی</a>
                             </li>
 
                             <li class="mega-dropdown">
@@ -360,11 +360,11 @@
                                             <div class="col">
                                                 <a class="category-image" href="#"><img
                                                         src="../static/images/category/megamenu-category-03.jpg" alt/></a>
-                                                <div class="category-title"><a href="#"> فقط جدید </a></div>
+                                                <div class="category-title"><a href="#"> لباس مردانه  </a></div>
                                                 <ul class="category-links">
-                                                    <li><a href="category.html"> جدید در لباس </a></li>
-                                                    <li><a href="category.html"> کفش های جدید </a></li>
-                                                    <li><a href="category.html"> جدید در لوازم جانبی </a></li>
+                                                    <li><a href="category.html">  پیراهن مردانه </a></li>
+                                                    <li><a href="category.html">  شلوار مردانه  </a></li>
+                                                    <li><a href="category.html"> لباس زیر مردانه    </a></li>
                                                 </ul>
                                             </div>
                                             <!-- /megamenu column -->
@@ -372,13 +372,13 @@
                                             <div class="col">
                                                 <a class="category-image" href="#"><img
                                                         src="../static/images/category/megamenu-category-04.jpg" alt/></a>
-                                                <div class="category-title"><a href="#"> فقط فروش </a></div>
+                                                <div class="category-title"><a href="#"> اکسسوری مردانه    </a></div>
                                                 <ul class="category-links">
-                                                    <li><a href="category.html"> فروش لباس </a></li>
-                                                    <li><a href="category.html"> <b> فروش کفش </b> <span class="menu-label"> فقط سه روز! </span>
+                                                    <li><a href="category.html"> عینک مردانه  </a></li>
+                                                    <li><a href="category.html"> <b> ساعت مچی مردانه  </b> <span class="menu-label"> فقط سه روز! </span>
                                                     </a>
                                                     </li>
-                                                    <li><a href="#"> لوازم جانبی فروش </a></li>
+                                                    <li><a href="#">   کراوات پاپیون </a></li>
                                                 </ul>
                                             </div>
                                             <!-- /megamenu column -->
@@ -386,12 +386,12 @@
                                             <div class="col">
                                                 <a class="category-image" href="#"><img
                                                         src="../static/images/category/megamenu-category-05.jpg" alt/></a>
-                                                <div class="category-title"><a href="#"> بالا </a> <span
+                                                <div class="category-title"><a href="#"> ارایشی بهداشتی </a> <span
                                                         class="menu-label-alt"> جدید </span></div>
                                                 <ul class="category-links">
-                                                    <li><a href="category.html"> تی شرت و جلیقه </a></li>
-                                                    <li><a href="category.html"> جامپر و ژاکت کش باف پشمی </a></li>
-                                                    <li><a href="category.html"> پالتو و کت </a></li>
+                                                    <li><a href="category.html"> اسپری بدن مردانه  </a></li>
+                                                    <li><a href="category.html">    لوازم اصلاح مردانه </a></li>
+                                                    <li><a href="category.html"> عطر مردانه </a></li>
                                                 </ul>
                                             </div>
                                             <!-- /megamenu column -->
@@ -399,11 +399,11 @@
                                             <div class="col">
                                                 <a class="category-image" href="#"><img
                                                         src="../static/images/category/megamenu-category-06.jpg" alt/></a>
-                                                <div class="category-title"><a href="#"> پایین </a></div>
+                                                <div class="category-title"><a href="#"> کیف کفش مردانه </a></div>
                                                 <ul class="category-links">
-                                                    <li><a href="category.html"> شلوارک </a></li>
-                                                    <li><a href="category.html"> شلوار </a></li>
-                                                    <li><a href="category.html"> جین </a></li>
+                                                    <li><a href="category.html"> کفش مردانه </a></li>
+                                                    <li><a href="category.html"> کفش ورزشی مردانه </a></li>
+                                                    <li><a href="category.html"> کیف پول مردانه </a></li>
                                                 </ul>
                                             </div>
                                             <!-- /megamenu column -->
@@ -421,7 +421,7 @@
                                                 <div class="banner-caption vertb">
                                                     <div class="vert-wrapper">
                                                         <div class="vert">
-                                                            <div class="text-1"> زنان 2016</div>
+                                                            <div class="text-1"> زنان 2021</div>
                                                             <div class="text-2"> فروش مجموعه</div>
                                                             <div class="text-3"> تا 40٪ از</div>
                                                             صرفه جویی کنید
@@ -441,24 +441,24 @@
                                             <div class="col">
                                                 <a class="category-image" href="#"><img
                                                         src="../static/images/category/megamenu-category-01.jpg" alt/></a>
-                                                <div class="category-title title-border"><a href="#">تجهیزات جانبی<span
+                                                <div class="category-title title-border"><a href="#">کیف کفش زنانه <span
                                                         class="menu-label">داغ</span></a></div>
                                                 <ul class="category-links column-count-2">
-                                                    <li><a href="category.html"> ورود جدید </a></li>
-                                                    <li><a href="category.html"> سگک های کمربند </a></li>
-                                                    <li><a href="category.html"> نکات یقه </a></li>
-                                                    <li><a href="category.html"> جذاب کننده ها و سرپیچ ها <span class="menu-label"> قیمت جدید </span></a>
+                                                    <li><a href="category.html"> کفش تخت زنانه  </a></li>
+                                                    <li><a href="category.html">  کفش مجلسی   </a></li>
+                                                    <li><a href="category.html"> کفش رسمی  </a></li>
+                                                    <li><a href="category.html"> صندل زنانه <span class="menu-label"> قیمت جدید </span></a>
                                                     </li>
-                                                    <li><a href="category.html"> دستکش و دستکش </a></li>
-                                                    <li><a href="category.html"> لوازم جانبی مو </a></li>
-                                                    <li><a href="category.html"> دستمال </a></li>
-                                                    <li><a href="category.html"> شناسه و دارندگان سند </a></li>
-                                                    <li><a href="category.html"> تی شرت و جلیقه </a></li>
-                                                    <li><a href="category.html"> حلقه ها و یابنده ها </a></li>
-                                                    <li><a href="category.html"> برنامه ریزان روز </a></li>
-                                                    <li><a href="category.html"> روسری و دستمال کاغذی </a></li>
-                                                    <li><a href="category.html"> کیف پول ها </a></li>
-                                                    <li><a href="category.html"> چترها </a></li>
+                                                    <li><a href="category.html">  بوت و نیم بوت</a></li>
+                                                    <li><a href="category.html"> کیف زنانه</a></li>
+                                                    <li><a href="category.html"> کیف مجلسی</a></li>
+                                                    <li><a href="category.html">  کیف پول</a></li>
+                                                    <li><a href="category.html"> کوله پشتی </a></li>
+                                                    <li><a href="category.html"> ساک دستی </a></li>
+                                                    <li><a href="category.html">  کیف اداری و لب تاپ </a></li>
+                                                    <li><a href="category.html">  کمربند   </a></li>
+                                                    <li><a href="category.html"> سگک های کمربند </a></li>
+                                                    <li><a href="category.html"> واکس اکسسوری </a></li>
                                                 </ul>
                                             </div>
                                             <!-- /megamenu column 1 -->
@@ -466,24 +466,24 @@
                                             <div class="col">
                                                 <a class="category-image" href="#"><img
                                                         src="../static/images/category/megamenu-category-02.jpg" alt/></a>
-                                                <div class="category-title title-border"><a href="#"> تن پوش <span
+                                                <div class="category-title title-border"><a href="#"> لباس زنانه  <span
                                                         class="menu-label-alt"> جدید </span> </a></div>
                                                 <ul class="category-links column-count-2">
-                                                    <li><a href="category.html"> ورود جدید </a></li>
-                                                    <li><a href="category.html"> تی شرت و جلیقه </a></li>
-                                                    <li><a href="category.html"> جامپر و ژاکت کش باف پشمی </a></li>
-                                                    <li><a href="category.html"> لباس کلاه و عرق <span
+                                                    <li><a href="category.html"> مانتو </a></li>
+                                                    <li><a href="category.html"> شلوار زنانه </a></li>
+                                                    <li><a href="category.html"> بلوز و تونیک زنانه </a></li>
+                                                    <li><a href="category.html">  بافت سویشرت زنانه <span
                                                             class="menu-label"> - 15٪ </span> </a>
                                                     </li>
-                                                    <li><a href="category.html"> پالتو و کت </a></li>
-                                                    <li><a href="category.html"> لباس آهسته و جلیقه ای </a></li>
-                                                    <li><a href="category.html"> شلوارک </a></li>
-                                                    <li><a href="category.html"> پوشاک ورزشی </a></li>
-                                                    <li><a href="category.html"> صمیمیت و خواب </a></li>
-                                                    <li><a href="category.html"> لباس بیرونی </a></li>
-                                                    <li><a href="category.html"> لباس شنا </a></li>
-                                                    <li><a href="category.html"> مجموعه جین </a></li>
-                                                    <li><a href="category.html"> تاپ و بلوزها </a></li>
+                                                    <li><a href="category.html"> پالتو و کاپشن زنانه </a></li>
+                                                    <li><a href="category.html"> لباس مجلسی   </a></li>
+                                                    <li><a href="category.html"> شومیز </a></li>
+                                                    <li><a href="category.html"> لباس ورزشی </a></li>
+                                                    <li><a href="category.html"> رویه لباس  </a></li>
+                                                    <li><a href="category.html"> تاپ زنانه </a></li>
+                                                    <li><a href="category.html"> سرهمی زناانه </a></li>
+                                                    <li><a href="category.html"> دامن  </a></li>
+                                                    <li><a href="category.html"> رویه لباس </a></li>
                                                     <li><a href="category.html"> شلوارک </a></li>
                                                 </ul>
                                             </div>
@@ -500,7 +500,7 @@
                                 </div>
                             </li>
                             <li class="mega-dropdown">
-                                <a href="category.html">الکترونیک</a>
+                                <a href="category.html">بچه گانه</a>
                                 <div class="sub-menu">
                                     <div class="container">
                                         <div class="megamenu-left width-33">
@@ -512,7 +512,7 @@
                                                         <div class="vert-wrapper">
                                                             <div class="vert">
                                                                 <div class="text-1"> سبک جدید</div>
-                                                                <div class="text-2"> مجموعه جدید</div>
+                                                                <div class="text-2"> لباس های جدید</div>
                                                                 <div class="banner-btn text-hoverslide"
                                                                      data-hcolor="# f82e56"> <span> <span class="text">  خرید کنید </span> <span
                                                                         class="hoverbg"> </span> </span>
@@ -527,54 +527,54 @@
                                             <!-- megamenu column 1 -->
                                             <div class="col">
                                                 <a class="category-image light" href="#"><img
-                                                        src="../static/images/category/megamenu-category-07.jpg" alt/></a>
-                                                <div class="category-title title-border"><a href="#"> دوربین ها و
-                                                    دوربین فیلمبرداری <span class="menu-label"> داغ </span></a></div>
+                                                        src="../static/images/category/megamenu-category-007.jpg" alt/></a>
+                                                <div class="category-title title-border"><a href="#"> لباس دخترانه
+                                                    <span class="menu-label"> داغ </span></a></div>
                                                 <ul class="category-links">
-                                                    <li><a href="category.html"> ورود جدید </a></li>
-                                                    <li><a href="category.html"> همه دوربین ها </a></li>
-                                                    <li><a href="category.html"> همه دوربین های فیلمبرداری </a></li>
-                                                    <li><a href="category.html"> لوازم جانبی دوربین </a></li>
-                                                    <li><a href="category.html"> لنزهای دوربین </a></li>
-                                                    <li><a href="category.html"> کارت های حافظه </a></li>
-                                                    <li><a href="category.html"> دوربین های وب </a></li>
+                                                    <li><a href="category.html"> بلوز پیراهن دخترانه  </a></li>
+                                                    <li><a href="category.html"> شلوار دامن   </a></li>
+                                                    <li><a href="category.html"> لباس زیر و راحتی     </a></li>
+                                                    <li><a href="category.html"> تاپ تی شرت دخترانه   </a></li>
+                                                    <li><a href="category.html"> پالتو وکاپشن </a></li>
+                                                    <li><a href="category.html">   پلیور سویشرت دخترانه </a></li>
+                                                    <li><a href="category.html">   کفش دخترانه </a></li>
                                                 </ul>
                                             </div>
                                             <!-- /megamenu column 1 -->
                                             <!-- megamenu column 2 -->
                                             <div class="col">
                                                 <a class="category-image light" href="#"><img
-                                                        src="../static/images/category/megamenu-category-09.jpg" alt/></a>
-                                                <div class="category-title title-border"><a href="#"> تلفن های همراه
+                                                        src="../static/images/category/megamenu-category-009.jpg" alt/></a>
+                                                <div class="category-title title-border"><a href="#">   لباس پسرانه
                                                     <span
                                                             class="menu-label-alt"> جدید </span></a></div>
                                                 <ul class="category-links">
-                                                    <li><a href="category.html"> تلفنها و طرحهای بدون قرارداد </a></li>
-                                                    <li><a href="category.html"> لوازم جانبی </a></li>
-                                                    <li><a href="category.html"> Apple iPhone </a></li>
-                                                    <li><a href="category.html"> نقاط مهم و برنامه های تلفن همراه <span
+                                                    <li><a href="category.html">  پیراهن پسرانه</a></li>
+                                                    <li><a href="category.html">  شلوار پسرانه </a></li>
+                                                    <li><a href="category.html">  لباس زیر پسرانه </a></li>
+                                                    <li><a href="category.html">  کاپشن پسرانه<span
                                                             class="menu-label"> - 15٪ </span></a></li>
-                                                    <li><a href="category.html"> سامسونگ کهکشان </a></li>
-                                                    <li><a href="category.html"> تلفن های همراه پیش پرداخت </a></li>
-                                                    <li><a href="category.html"> سیم کارت ها </a></li>
+                                                    <li><a href="category.html">  پلیور کاپشن پسرانه </a></li>
+                                                    <li><a href="category.html">  کفش پسرانه </a></li>
+                                                    <li><a href="category.html">  اکسسوری </a></li>
                                                 </ul>
                                             </div>
                                             <!-- /megamenu column 2 -->
                                             <!-- megamenu column 3 -->
                                             <div class="col">
                                                 <a class="category-image light" href="#"><img
-                                                        src="../static/images/category/megamenu-category-08.jpg" alt/></a>
-                                                <div class="category-title title-border"><a href="#"> بازی های ویدیویی
+                                                        src="../static/images/category/megamenu-category-008.jpg" alt/></a>
+                                                <div class="category-title title-border"><a href="#">  لباس نوزادی 
                                                     <span
                                                             class="menu-label"> داغ </span> </a></div>
                                                 <ul class="category-links">
-                                                    <li><a href="category.html"> PlayStation 4 </a></li>
-                                                    <li><a href="category.html"> Xbox One </a></li>
-                                                    <li><a href="category.html"> Nintendo 3DS / 2DS </a></li>
-                                                    <li><a href="category.html"> لوازم جانبی بازی ویدیویی </a></li>
-                                                    <li><a href="category.html"> کارت های Xbox Live </a></li>
-                                                    <li><a href="category.html"> راهنماهای استراتژی </a></li>
-                                                    <li><a href="category.html"> <i class="icon icon-gift"> </i> کارت های هدیه بازی
+                                                    <li><a href="category.html">  ست لباس نوزادی </a></li>
+                                                    <li><a href="category.html"> بادی سرهمی  </a></li>
+                                                    <li><a href="category.html">   تاپ و تی شرت </a></li>
+                                                    <li><a href="category.html">  کت و پالتو </a></li>
+                                                    <li><a href="category.html">    کفش نوزادی </a></li>
+                                                    <li><a href="category.html"> اکسسوری  </a></li>
+                                                    <li><a href="category.html"> <i class="icon icon-gift"> </i>    پاپوش نوزادی
                                                     </a>
                                                     </li>
                                                 </ul>
@@ -584,7 +584,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="{% static 'main/templates/post/list.html' %}" rel="stylesheet">فروشگاه</a></li>
+                            <li><a href="/shop" rel="stylesheet">فروشگاه</a></li>
                         </ul>
                     </div>
                     <!-- /Mega Menu -->
@@ -639,11 +639,11 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide" data-thumb="../static/images/slider/slide-02-thumb.png"
+                                <div class="swiper-slide" data-thumb="../static/images/slider/slide-002-thumb.png"
                                      data-href="http://google.com" data-target="_blank">
                                     <!-- _blank or _self ( _self is default )-->
                                     <div class="wrapper">
-                                        <figure><img src="../static/images/slider/slide-02.jpg" alt=""></figure>
+                                        <figure><img src="../static/images/slider/slide-002.jpg" alt=""></figure>
                                         <div class="text2-1 animate" data-animate="flipInY" data-delay="0"> سیکو</div>
                                         <div class="text2-2 animate" data-animate="bounceIn" data-delay="500"> فصل فروش
                                         </div>
@@ -655,9 +655,9 @@
                                         <div class="text2-5 animate" data-animate="hinge" data-delay="2000"> حراج</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" data-thumb="../static/images/slider/slide-01-thumb.png">
+                                <div class="swiper-slide" data-thumb="../static/images/slider/slide-001-thumb.png">
                                     <div class="wrapper">
-                                        <figure><img src="../static/images/slider/slide-01.jpg" alt=""></figure>
+                                        <figure><img src="../static/images/slider/slide-001.jpg" alt=""></figure>
                                         <div class="caption animate" data-animate="fadeIn">
 
                                             <div class="text2 animate" data-animate="bounceInLeft" data-delay="500">
@@ -682,9 +682,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" data-thumb="../static/images/slider/slide-03-thumb.png">
+                                <div class="swiper-slide" data-thumb="../static/images/slider/banner-02.png">
                                     <div class="wrapper">
-                                        <figure><img src="../static/images/slider/slide-03.jpg" alt=""></figure>
+                                        <figure><img src="../static/images/slider/banner-02.jpg" alt=""></figure>
 
                                         <div class="text3-2 animate" data-animate="bounceInDown" data-delay="500">
                                             خیابان پر از فشن
@@ -697,14 +697,14 @@
                                             خرید کنید </a>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" data-thumb="../static/images/slider/slide-04-thumb.png">
+                                <div class="swiper-slide" data-thumb="../static/images/slider/banner-01.png">
                                     <div class="wrapper">
-                                        <figure><img src="../static/images/slider/slide-04.jpg" alt=""></figure>
+                                        <figure><img src="../static/images/slider/banner-01.jpg" alt=""></figure>
                                         <div class="text4-1 animate" data-animate="bounceInLeft" data-delay="0">تابستان
                                         </div>
 
                                         <div class="text4-3 animate" data-animate="bounceInUp" data-delay="1000">خرید
-                                            مایو با تخفیف
+                                        کفش مردانه 
                                         </div>
                                         <a href="#" class="text4-4 animate" data-animate="bounceInLeft"
                                            data-delay="1500">خریدکنید</a>
@@ -728,14 +728,11 @@
                 <div class="container">
                     <!-- Wellcome text -->
                     <div class="text-center bottom-space">
-                        <h1 class="size-lg no-padding">به فروشگاه <span class="logo-font custom-color">سیکو</span>
-                            خوش آمدید </h1>
+                        <h2 class="size-lg no-padding">به فروشگاه <span class="logo-font custom-color">سیکو</span>
+                            خوش آمدید </h2>
                         <div class="line-divider"></div>
-                        <p class="custom-color-alt">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
-                            <br> مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت
-                            و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت
-                            بیشتری را برای طراحان رایانه ای .
+                        <p class="custom-color-alt">
+                            <br> 
                         </p>
                     </div>
                     <!-- /Wellcome text -->
@@ -768,28 +765,67 @@
                     </div>
                 </div>
             </div>
-           {% comment %} {% extends "main/base.html" %} {% endcomment %}
-                    {% comment %} {% extends "shop/base.html" %} {% endcomment %}
+            {% block content %}
 
-                    {% block title %}{{ post.title }}{% endblock %}
-                    {% block content %}
-                    <h1>{{ post.title }}</h1>
+             <h1>محصولات</h1>
 
-                    <p class="date">
 
-                        Published {{ post.publish }} by {{ post.user }}
-                    </p>
-                    <font face='Bnazenin,Tahoma,Arial,Serif'> مشخصات </font>
+                    <div class ="wrapper">
+                       
+                                <h2> <a href="{{ post.get_absolute_url }}">
+                                    {{ post.title }}
+                                </a> </h2>
+                                    <p class="date">
+                                    Published {{ post.publish }} by {{ post.author }}
+                                    </p>
+                                 <div class="price-box"> <span class="price-container"> <span
+                                                            class="price-wrapper"> <span
+                                                            class="old-price">   {{post.price}} تومان
+                                                            </span> <span
+                                                            class="special-price">{{post.Discounted_price}} تومان</span> </span>
+															</span>
+                                                    </div>
+                                <p>
+                                  <button class="btn add-to-cart" data-product="789123"><i class="icon icon-cart"></i><span>افزودن به سبد خرید</span></button>
+                                    </p>
+                            <h4> مشخصات: </h4>
+                            {{ post.body|linebreaks }}
 
-                    {{ post.body|linebreaks }}
+
                     {% endblock %}
-                    <div class="block fullwidth full-nopad">
-                        <div class="container">
-                        <div id="instafeed" class="instagramm-feed-full"></div>
-                        <div class="instagramm-title">Instagram Feed</div>
-                     </div>
-                     <div class="footer-middle">
-                     <div class="container">
+
+                 <H1>   </h1>
+        </main>
+        <!-- /Page Content -->
+        <!-- Footer -->
+        <footer class="page-footer variant2 fullboxed">
+            <div class="footer-top">
+                <div class="container">
+                    <!-- newsletter -->
+                    <div class="newsletter variant2 row">
+                        <div class="col-sm-3">
+                            <a href="/" title="Logo"><img src="../static/images/logo-footer.png" alt class="img-responsive"/></a>
+                        </div>
+                        <div class="col-sm-9">
+                            <!-- input-group -->
+                            <form action="#">
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+											<button class="btn btn-default" type="submit"><i
+                                                    class="icon icon-close-envelope"></i></button>
+											</span>
+                                </div>
+                            </form>
+                            <!-- /input-group -->
+                        </div>
+                    </div>
+                    <!-- /newsletter -->
+                </div>
+            </div> 
+            <br>
+            <div class="footer-middle">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-lg-3">
                             <div class="footer-block collapsed-mobile">
@@ -1034,6 +1070,3 @@
 </body>
 
 </html>
-
-
-
