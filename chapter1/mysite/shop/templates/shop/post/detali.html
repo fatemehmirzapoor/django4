@@ -1,17 +1,14 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>فروشگاه سیکو</title>
     <meta name="author" content="BigSteps">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="favicon.ico">
+    {% comment %} <link rel="shortcut icon" href="favicon.ico"> {% endcomment %}
 
     <!-- Vendor -->
     <link href="{% static 'js/vendor/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
@@ -22,27 +19,22 @@
     <link href="{% static 'js/vendor/darktooltip/dist/darktooltip.css' %}" rel="stylesheet">
     <link href="{% static 'css/animate.css' %}" rel="stylesheet">
   
-    <!-- Custom -->
+    {% comment %} {% comment %} <!-- Custom --> {% endcomment %}
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/megamenu.css' %}" rel="stylesheet">
     <link href="{% static 'css/style-rtl.css' %}" rel="stylesheet">
     <link href="{% static 'css/shop.css' %}" rel="stylesheet">
 
-
     <!-- Farsi WebFont: BFont.ir -->
-
 
     <!-- Color Schemes -->
     <!-- your style-color.css here  -->
 
-
     <!-- Icon Font -->
     <link href="{% static 'fonts/icomoon-reg/style.css' %}" rel="stylesheet">
 
-
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Oswald:300,400,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i' rel="stylesheet">
-
 
 </head>
 
@@ -92,16 +84,7 @@
                                             <ol class="minicart-items">
                                                 <li class="item product product-item">
                                                     <div class="product">
-                                                        <a class="product-item-photo" href="#"
-                                                           title="Long sleeve overall">
-																<span class="product-image-container">
-																<span class="product-image-wrapper">
-																<img class="product-image-photo"
-                                                                     src="../static/images/products/product-16-c1.jpg"
-                                                                     alt="Long sleeve overall">
-																</span>
-																</span>
-                                                        </a>
+                                                      
                                                         <div class="product-item-details">
                                                             <div class="product-item-name">
                                                                 <a href="#">در کل آستین بلند</a>
@@ -120,7 +103,7 @@
 																		<span class="price-wrapper">
 																			<span class="price-excluding-tax">
 																			<span class="minicart-price">
-																			<span class="price">130 تومان</span> </span>
+																			<span class="price">130000 تومان</span> </span>
 																		</span>
 																		</span>
                                                                 </div>
@@ -146,14 +129,6 @@
                                                     <div class="product">
                                                         <a class="product-item-photo" href="#"
                                                            title="Lace back mini dress">
-																<span class="product-image-container">
-																<span class="product-image-wrapper">
-																<img class="product-image-photo"
-                                                                     src="../static/images/products/product-20.jpg"
-                                                                     alt="Lace back mini dress">
-																</span>
-																</span>
-                                                        </a>
                                                         <div class="product-item-details">
                                                             <div class="product-item-name">
                                                                 <a href="#">لباس مینی پشت توری</a>
@@ -172,7 +147,7 @@
 																		<span class="price-wrapper">
 																			<span class="price-excluding-tax">
 																			<span class="minicart-price">
-																			<span class="price">79 تومان</span> </span>
+																			<span class="price">79000 تومان</span> </span>
 																		</span>
 																		</span>
                                                                 </div>
@@ -198,13 +173,6 @@
                                                     <div class="product">
                                                         <a class="product-item-photo" href="#"
                                                            title="Backless mini dress">
-																<span class="product-image-container">
-																<span class="product-image-wrapper">
-																<img class="product-image-photo"
-                                                                     src="../static/images/products/product-7.jpg"
-                                                                     alt="Backless mini dress">
-																</span>
-																</span>
                                                         </a>
                                                         <div class="product-item-details">
                                                             <div class="product-item-name">
@@ -224,7 +192,7 @@
 																		<span class="price-wrapper">
 																			<span class="price-excluding-tax">
 																			<span class="minicart-price">
-																			<span class="price">369 تومان</span> </span>
+																			<span class="price">369000 تومان</span> </span>
 																		</span>
 																		</span>
                                                                 </div>
@@ -253,7 +221,7 @@
 													<span>Subtotal</span>
 												</span>
                                             <div class="amount price-container">
-                                                <span class="price-wrapper"><span class="price">587 تومان</span></span>
+                                                <span class="price-wrapper"><span class="price">587000 تومان</span></span>
                                             </div>
                                         </div>
                                         <div class="actions">
@@ -280,16 +248,16 @@
                     <div class="header-links">
                         <!-- Header Language -->
                         <div class="header-link header-select dropdown-link header-language">
-                            <a href="#"><img src="../static/images/flags/eng.png" alt/></a>
+                            <a href="#">زبان</a>
                             <ul class="dropdown-container">
                                 <li class="active">
-                                    <a href="#"><img src="../static/images/flags/eng.png" alt/>انگلیسی</a>
+                                    <a href="#">انگلیسی</a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="../static/images/flags/fr.png" alt/>فارسی</a>
+                                    <a href="#">فارسی</a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="../static/images/flags/den.png" alt/>آلمانی</a>
+                                    <a href="#">آلمانی</a>
                                 </li>
                             </ul>
                         </div>
@@ -335,14 +303,6 @@
                             </form>
                         </div>
                     </div>
-                    <!-- /Header Search -->
-                    <!-- Logo -->
-                    <div class="header-logo">
-                        <a href="http://localhost:8000/main/" title="Logo"><img src="../static/images/logo.png" alt="Logo"/></a>
-                    </div>
-                    <!-- /Logo -->
-                    <!-- Mobile Menu -->
-
                     <!-- Mobile Menu -->
                     <!-- Mega Menu -->
                     <div class="megamenu fadein blackout">
@@ -350,7 +310,6 @@
                             <li class="simple-dropdown">
                                 <a href="http://localhost:8000/main/">صفحه اصلی</a>
                             </li>
-
                             <li class="mega-dropdown">
                                 <a href="http://localhost:8000/shop/">مردانه<span class="menu-label">-15%</span></a>
                                 <div class="sub-menu">
@@ -358,9 +317,7 @@
                                         <div class="megamenu-categories column-4">
                                             <!-- megamenu column -->
                                             <div class="col">
-                                                <a class="category-image" href="#"><img
-                                                        src="../static/images/category/megamenu-category-03.jpg" alt/></a>
-                                                <div class="category-title"><a href="#"> لباس مردانه  </a></div>
+                                                <div class="category-title"><a href="#"><h4> لباس مردانه </h4> </a></div>
                                                 <ul class="category-links">
                                                     <li><a href="http://localhost:8000/shop/">  پیراهن مردانه </a></li>
                                                     <li><a href="http://localhost:8000/shop/">  شلوار مردانه  </a></li>
@@ -370,9 +327,9 @@
                                             <!-- /megamenu column -->
                                             <!-- megamenu column -->
                                             <div class="col">
-                                                <a class="category-image" href="#"><img
-                                                        src="../static/images/category/megamenu-category-04.jpg" alt/></a>
-                                                <div class="category-title"><a href="#"> اکسسوری مردانه    </a></div>
+                                               
+                                                <div class="category-title"><a href="#"> <h4>اکسسوری مردانه</h4> </a></div>
+
                                                 <ul class="category-links">
                                                     <li><a href="http://localhost:8000/shop/"> عینک مردانه  </a></li>
                                                     <li><a href="http://localhost:8000/shop/"> <b> ساعت مچی مردانه  </b> <span class="menu-label"> فقط سه روز! </span>
@@ -384,9 +341,9 @@
                                             <!-- /megamenu column -->
                                             <!-- megamenu column -->
                                             <div class="col">
-                                                <a class="category-image" href="#"><img
-                                                        src="../static/images/category/megamenu-category-05.jpg" alt/></a>
-                                                <div class="category-title"><a href="#"> ارایشی بهداشتی </a> <span
+                                               
+                                                <div class="category-title"><a href="#"><h4> ارایشی بهداشتی </h4></a>
+                                                 <span
                                                         class="menu-label-alt"> جدید </span></div>
                                                 <ul class="category-links">
                                                     <li><a href="http://localhost:8000/shop/"> اسپری بدن مردانه  </a></li>
@@ -397,9 +354,10 @@
                                             <!-- /megamenu column -->
                                             <!-- megamenu column -->
                                             <div class="col">
-                                                <a class="category-image" href="#"><img
-                                                        src="../static/images/category/megamenu-category-06.jpg" alt/></a>
-                                                <div class="category-title"><a href="#"> کیف کفش مردانه </a></div>
+                                               
+                                                <div class="category-title"><a href="#"><h4>کیف کفش مردانه</h4>  </a></div>
+                                                
+
                                                 <ul class="category-links">
                                                     <li><a href="http://localhost:8000/shop/"> کفش مردانه </a></li>
                                                     <li><a href="http://localhost:8000/shop/"> کفش ورزشی مردانه </a></li>
@@ -417,7 +375,6 @@
                                     <div class="container">
                                         <div class="megamenu-right width-25">
                                             <div class="banner style-1 autosize-text" data-fontratio="4.2">
-                                                <img src="../static/images/banners/banner-1.jpg" alt="Banner">
                                                 <div class="banner-caption vertb">
                                                     <div class="vert-wrapper">
                                                         <div class="vert">
@@ -439,8 +396,7 @@
                                         <div class="megamenu-categories column-2">
                                             <!-- megamenu column 1 -->
                                             <div class="col">
-                                                <a class="category-image" href="#"><img
-                                                        src="../static/images/category/megamenu-category-01.jpg" alt/></a>
+                                                
                                                 <div class="category-title title-border"><a href="#">کیف کفش زنانه <span
                                                         class="menu-label">داغ</span></a></div>
                                                 <ul class="category-links column-count-2">
@@ -464,8 +420,7 @@
                                             <!-- /megamenu column 1 -->
                                             <!-- megamenu column 2 -->
                                             <div class="col">
-                                                <a class="category-image" href="#"><img
-                                                        src="../static/images/category/megamenu-category-02.jpg" alt/></a>
+                                                
                                                 <div class="category-title title-border"><a href="#"> لباس زنانه  <span
                                                         class="menu-label-alt"> جدید </span> </a></div>
                                                 <ul class="category-links column-count-2">
@@ -490,9 +445,7 @@
                                             <!-- /megamenu column 2 -->
                                             <!-- megamenu bottom -->
                                             <div class="megamenu-bottom">
-                                                <a href="#"><img class="img-responsive"
-                                                                 src="../static/images/banners/banner-megamenu.jpg"
-                                                                 alt="megamenu banner"></a>
+                                               
                                             </div>
                                             <!-- /megamenu bottom -->
                                         </div>
@@ -507,7 +460,6 @@
                                             <a href="#bannerLink" class="banner-wrap">
                                                 <div class="banner style-13 autosize-text image-hover-scale"
                                                      data-fontratio="4">
-                                                    <img src="../static/images/banners/banner-21.jpg" alt="Banner">
                                                     <div class="banner-caption horc vertb" style="bottom: 3%;">
                                                         <div class="vert-wrapper">
                                                             <div class="vert">
@@ -526,8 +478,7 @@
                                         <div class="megamenu-categories column-3">
                                             <!-- megamenu column 1 -->
                                             <div class="col">
-                                                <a class="category-image light" href="#"><img
-                                                        src="../static/images/category/megamenu-category-007.jpg" alt/></a>
+                                               
                                                 <div class="category-title title-border"><a href="#"> لباس دخترانه
                                                     <span class="menu-label"> داغ </span></a></div>
                                                 <ul class="category-links">
@@ -543,8 +494,7 @@
                                             <!-- /megamenu column 1 -->
                                             <!-- megamenu column 2 -->
                                             <div class="col">
-                                                <a class="category-image light" href="#"><img
-                                                        src="../static/images/category/megamenu-category-009.jpg" alt/></a>
+                                                
                                                 <div class="category-title title-border"><a href="#">   لباس پسرانه
                                                     <span
                                                             class="menu-label-alt"> جدید </span></a></div>
@@ -562,8 +512,7 @@
                                             <!-- /megamenu column 2 -->
                                             <!-- megamenu column 3 -->
                                             <div class="col">
-                                                <a class="category-image light" href="#"><img
-                                                        src="../static/images/category/megamenu-category-008.jpg" alt/></a>
+                                                
                                                 <div class="category-title title-border"><a href="#">  لباس نوزادی 
                                                     <span
                                                             class="menu-label"> داغ </span> </a></div>
@@ -591,207 +540,38 @@
                 </div>
             </div>
         </header>
-        <!-- /Header -->
-        <!-- Sidebar -->
-        <div class="sidebar-wrapper">
-            <div class="sidebar-top"><a href="#" class="slidepanel-toggle"><i class="icon icon-left-arrow-circular"></i></a>
-            </div>
-           
-            <div class="sidebar-bot">
-                <div class="share-button toTop">
-                    <span class="toggle"></span>
-                    <ul class="social-list">
-                        <li>
-                            <a href="#" class="icon icon-google google"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="icon icon-fancy fancy"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="icon icon-pinterest pinterest"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="icon icon-twitter-logo twitter"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="icon icon-facebook-logo facebook"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- /Sidebar -->
-        <!-- Page Content -->
-        <main class="page-main">
-            <div class="block fullwidth full-nopad bottom-space">
-                <div class="container">
-                    <!-- Main Slider -->
-                    <div class="mainSlider" data-thumb="true" data-thumb-width="230" data-thumb-height="100">
-                        <div class="sliderLoader">بارگذاری...</div>
-                        <!-- Slider main container -->
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide" data-thumb="../static/images/slider/slide-002-thumb.png"
-                                     data-href="http://google.com" data-target="_blank">
-                                    <!-- _blank or _self ( _self is default )-->
-                                    <div class="wrapper">
-                                        <figure><img src="../static/images/slider/slide-002.jpg" alt=""></figure>
-                                        <div class="text2-1 animate" data-animate="flipInY" data-delay="0"> سیکو</div>
-                                        <div class="text2-2 animate" data-animate="bounceIn" data-delay="500"> فصل فروش
-                                        </div>
-                                        <div class="text2-3 animate" data-animate="bounceIn" data-delay="1000">مارک
-                                            محبوب
-                                        </div>
-                                        <div class="text2-4 animate" data-animate="rubberBand" data-delay="1500"> 70%
-                                        </div>
-                                        <div class="text2-5 animate" data-animate="hinge" data-delay="2000"> حراج</div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide" data-thumb="../static/images/slider/slide-001-thumb.png">
-                                    <div class="wrapper">
-                                        <figure><img src="../static/images/slider/slide-001.jpg" alt=""></figure>
-                                        <div class="caption animate" data-animate="fadeIn">
+        <main>
+         <br> <br> <br> <br>
 
-                                            <div class="text2 animate" data-animate="bounceInLeft" data-delay="500">
-                                                <strong>مجموعه</strong> جدید
-                                            </div>
-                                            <div class="text3 animate" data-animate="bounceInLeft" data-delay="1500">
-                                                فشن <strong>زنانه</strong></div>
-                                            <div class="animate" data-animate="fadeIn" data-delay="2000">
-                                                <!-- coolbutton -->
-                                                <a href="#" class="cool-btn"
-                                                   style="-webkit-clip-path: url(#coolButton); clip-path: url(#coolButton);">
-                                                    <span>بیشتر</span> </a>
-                                                <svg class="clip-svg">
-                                                    <defs>
-                                                        <clipPath id="coolButton" clipPathUnits="objectBoundingBox">
-                                                            <polygon points="0 .18, .99 .15, .91 .85, .07 .8"/>
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-                                                <!-- // coolbutton -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide" data-thumb="../static/images/slider/banner-02.png">
-                                    <div class="wrapper">
-                                        <figure><img src="../static/images/slider/banner-02.jpg" alt=""></figure>
-
-                                        <div class="text3-2 animate" data-animate="bounceInDown" data-delay="500">
-                                            خیابان پر از فشن
-                                        </div>
-
-                                        <div class="text3-4 animate" data-animate="bounceIn" data-delay="1500"> شهر فشن
-                                        </div>
-
-                                        <a href="#" class="text3-6 animate" data-animate="rubberBand" data-delay="2500">
-                                            خرید کنید </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide" data-thumb="../static/images/slider/banner-01.png">
-                                    <div class="wrapper">
-                                        <figure><img src="../static/images/slider/banner-01.jpg" alt=""></figure>
-                                        <div class="text4-1 animate" data-animate="bounceInLeft" data-delay="0">تابستان
-                                        </div>
-
-                                        <div class="text4-3 animate" data-animate="bounceInUp" data-delay="1000">خرید
-                                        کفش مردانه 
-                                        </div>
-                                        <a href="#" class="text4-4 animate" data-animate="bounceInLeft"
-                                           data-delay="1500">خریدکنید</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- pagination -->
-                            <div class="swiper-pagination"></div>
-                            <!-- pagination thumbs -->
-                            <div class="swiper-pagination-thumbs">
-                                <div class="thumbs-wrapper">
-                                    <div class="thumbs"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Main Slider -->
-                </div>
-            </div>
-            <div class="block">
-                <div class="container">
-                    <!-- Wellcome text -->
-                    <div class="text-center bottom-space">
-                        <h2 class="size-lg no-padding">به فروشگاه <span class="logo-font custom-color">سیکو</span>
-                            خوش آمدید </h2>
-                        <div class="line-divider"></div>
-                        <p class="custom-color-alt"> 
-                            <br> 
-                        </p>
-                    </div>
-                    <!-- /Wellcome text -->
-                </div>
-            </div>
-            <div class="block">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="box style2 bgcolor1 text-center">
-                                <div class="box-icon"><i class="icon icon-truck"></i></div>
-                                <h3 class = "box-title"> حمل و نقل رایگان </h3>
-                                <div class = "box-text"> ارسال رایگان برای همه سفارشات بیش از 199 دلار </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="box style2 bgcolor2 text-center">
-                                <div class="box-icon"><i class="icon icon-dollar"></i></div>
-                                <h3 class = "box-title"> برگشت پول </h3>
-                                <div class = "box-text"> 100٪ ضمانت استرداد پول </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="box style2 bgcolor3 text-center">
-                                <div class="box-icon"><i class="icon icon-help"></i></div>
-                                <h3 class="box-title">پشتیبانی آنلاین</h3>
-                                <div class="box-text">پشتیبانی سریع خدمات 24/7</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
             {% block content %}
 
-             <h1>محصولات</h1>
+            <h1>محصولات</h1>
+            <div class ="wrapper">
+            <h2> <a href="{{ post.get_absolute_url }}">
+            {{ post.title }}
+            </a> </h2>
+            <p class="date">
+                    Published {{ post.publish }} by {{ post.author }}
+            </p>
+            <div class="price-box"> <span class="price-container"> <span
+                        class="price-wrapper"> <span
+                            class="old-price">   {{post.price}} تومان
+                                    </span> <span
+                                        class="special-price">{{post.Discounted_price}} تومان</span> </span>
+									            </span>
+            </div>
+            <P> تعداد : {{post.count}}</P>
+            <p>
+                <button class="btn add-to-cart" data-product="789123"><i class="icon icon-cart"></i><span>افزودن به سبد خرید</span></button>
+             </p>
+             <h4> توضیحات: </h4>
+            {{ post.body|linebreaks }}
 
 
-                    <div class ="wrapper">
-                       
-                                <h2> <a href="{{ post.get_absolute_url }}">
-                                    {{ post.title }}
-                                </a> </h2>
-                                    <p class="date">
-                                    Published {{ post.publish }} by {{ post.author }}
-                                    </p>
-                                 <div class="price-box"> <span class="price-container"> <span
-                                                            class="price-wrapper"> <span
-                                                            class="old-price">   {{post.price}} تومان
-                                                            </span> <span
-                                                            class="special-price">{{post.Discounted_price}} تومان</span> </span>
-															</span>
-                                                    </div>
-                                                    <P> تعداد : {{post.count}}</P>
-                                <p>
-                                  <button class="btn add-to-cart" data-product="789123"><i class="icon icon-cart"></i><span>افزودن به سبد خرید</span></button>
-                                    </p>
-                            <h4> توضیحات: </h4>
-                            {{ post.body|linebreaks }}
+           {% endblock %}
 
-
-                            {% endblock %}
-
-             <H1>   </h1>
+         <H1>   </h1>
         </main>
-        <!-- /Page Content -->
         <!-- Footer -->
         <footer class="page-footer variant2 fullboxed">
             <div class="footer-top">
@@ -799,7 +579,6 @@
                     <!-- newsletter -->
                     <div class="newsletter variant2 row">
                         <div class="col-sm-3">
-                            <a href="/" title="Logo"><img src="../static/images/logo-footer.png" alt class="img-responsive"/></a>
                         </div>
                         <div class="col-sm-9">
                             <!-- input-group -->
@@ -839,6 +618,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="col-md-3 col-lg-3">
                             <div class="footer-block collapsed-mobile">
                                 <div class="title">
@@ -882,7 +662,7 @@
                                 <div class="collapsed-content">
                                     <ul class="simple-list">
                                         <li><i class="icon icon-phone"></i>+01 234 567 89</li>
-                                        <li><i class="icon icon-close-envelope"></i><a href="mailto:support@seiko.com">support@seiko.com</a>
+                                        <li><i class="icon icon-close-envelope"></i><a href="mailto:support@seiko.com">mirzapoor98@gmail.com</a>
                                         </li>
                                         <li><i class="icon icon-clock"></i>8:00 - 19:00, Monday - Saturday</li>
                                     </ul>
@@ -895,22 +675,10 @@
             <div class="footer-bot">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-lg-8">
-                            <div class="image-banner text-center">
-                                <a href="#"> <img src="../static/images/banners/footer-banner.jpg" alt="Footer Banner"
-                                                  class="img-responsive"> </a>
-                            </div>
-                        </div>
+                       
                         <div class=" col-md-6 col-lg-4">
                             <div class="bottom-space">
-                                <div class="footer-copyright text-center"> © 2016 Demo Store. All Rights Reserved.</div>
-                                <div class="footer-payment-link text-center">
-                                    <a href="#"><img src="../static/images/payment-logo/icon-pay-1.png" alt=""></a>
-                                    <a href="#"><img src="../static/images/payment-logo/icon-pay-2.png" alt=""></a>
-                                    <a href="#"><img src="../static/images/payment-logo/icon-pay-3.png" alt=""></a>
-                                    <a href="#"><img src="../static/images/payment-logo/icon-pay-4.png" alt=""></a>
-
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -931,9 +699,7 @@
         <div class="products-list-wrapper">
             <ul class="products-list">
                 <li>
-                    <a href="product.html" title="Product Name Long Name"><img class="product-image-photo"
-                                                                               src="../static/images/products/product-10.jpg"
-                                                                               alt=""></a> <span
+                        <span
                         class="item-qty">3</span>
                     <div class="actions"><a href="#" class="action edit" title="Edit item"><i
                             class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i
@@ -945,9 +711,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="product.html" title="Product Name Long Name"><img class="product-image-photo"
-                                                                               src="../static/images/products/product-11.jpg" 
-                                                                                alt=""></a> <span
+                        <span
                         class="item-qty">3</span>
                     <div class="actions"><a class="action edit" href="#" title="Edit item"><i
                             class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i
@@ -959,8 +723,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="product.html" title="Product Name Long Name"><img class="product-image-photo"
-                                                                               src='../static/images/products/product-12.jpg'alt=""></a> <span
+                    <span
                         class="item-qty">3</span>
                     <div class="actions"><a class="action edit" href="#" title="Edit item"><i
                             class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i
@@ -972,8 +735,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="product.html" title="Product Name Long Name"><img class="product-image-photo"
-                                                                               src='../static/images/products/product-13.jpg'alt=''></a> <span
+                        <span
                         class="item-qty">3</span>
                     <div class="actions"><a class="action edit" href="#" title="Edit item"><i
                             class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i
@@ -985,9 +747,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="product.html" title="Product Name Long Name"><img class="product-image-photo"
-                                                                               src='../static/images/products/product-14.jpg'
-                                                                               alt=''></a> <span
+                    <span
                         class="item-qty">3</span>
                     <div class="actions"><a class="action edit" href="#" title="Edit item"><i
                             class="icon icon-pencil"></i></a> <a class="action delete" href="#" title="Delete item"><i
@@ -999,9 +759,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="product.html" title="Product Name Long Name"><img class="product-image-photo"
-                                                                               src='../static/images/products/product-15.jpg'
-                                                                               alt=""></a> <span
+                     <span
                                                                         
                         class="item-qty">3</span>
                     <div class="actions"><a class="action edit" href="#" title="Edit item"><i

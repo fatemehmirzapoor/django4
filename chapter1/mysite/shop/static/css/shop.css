@@ -11,7 +11,7 @@ a {
 
 h1 { 
     font-weight:normal;
-    border-bottom:1px solid rgb(24, 180, 71);
+    border-bottom:1px solid rgb(250, 100, 133);
     padding:0 0 10px 0;
 }
 
@@ -45,7 +45,7 @@ p.date {
 .pagination { 
     margin:40px 0; 
     font-weight:bold;
-    float: left;
+    float:center;
 }
 
 /* forms */

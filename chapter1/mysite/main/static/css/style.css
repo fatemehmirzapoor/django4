@@ -73,9 +73,11 @@
 
 @font-face {
 
-  font-family: “yekan”;
+  font-family:“IRAN Sans Regular” , yekan,IRAN Sans Regular;
 
   src: url(fonts/Yekan.eot);
+  src: url(fonts/IRANSansBold.ttf);
+  src: url(fonts/IRANSansRegular.ttf);
 
   src: url(fonts/Yekan.eot?#iefix) format(“embedded-opentype”), url(fonts/Yekan.woff) format(“woff”), url(fonts/Yekan.ttf) format(“truetype”), url(fonts/Yekan.svg#BYekan) format(“svg”);
 

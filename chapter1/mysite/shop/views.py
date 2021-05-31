@@ -36,4 +36,6 @@ def shop_detail(request, year, month, day, post):
 
 
 
+
+
       
