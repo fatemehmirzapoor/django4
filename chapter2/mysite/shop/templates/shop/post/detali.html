@@ -566,7 +566,12 @@
              </p>
              <h4> توضیحات: </h4>
             {{ post.body|linebreaks }}
-
+            <hr>
+            <p>
+                <a href="{% url "shop:post_share" post.id %}">
+                این نوشته را با دوستانتان به اشتراک بگذارید.
+                </a>
+                </p>
 
            {% endblock %}
 

@@ -30,7 +30,7 @@ h2 {
     float:right;
     width:30%;
     padding:10px;
-    background:#5c1ca7; 
+    background:#7c7b7e; 
     height:100%;
 }
 
@@ -59,15 +59,15 @@ input, textarea {
     clear:both;
     float:left;
     margin:0 0 10px;
-    background:#2905aa;
+    background:#bcbac2;
     border:0;
     padding:6px 10px;
     font-size:12px;
 }
 input[type=submit] {
     font-weight:bold;
-    background:#00abff;
-    color:rgb(10, 185, 39);
+    background:#d8dcdf;
+    color:rgb(2, 10, 3);
     padding:10px 20px;
     font-size:14px;
     text-transform:uppercase; 
