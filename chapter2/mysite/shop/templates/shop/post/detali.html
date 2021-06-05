@@ -564,21 +564,51 @@
             <p>
                 <button class="btn add-to-cart" data-product="789123"><i class="icon icon-cart"></i><span>افزودن به سبد خرید</span></button>
              </p>
-             <h4> توضیحات: </h4>
+             {% with comments.count as total_comments %}
+            <h2>
+             تعداد نظرات :{{ total_comments }} 
+             {% comment %} comment{{ total_comments|pluralize }} {% endcomment %}
+            </h2>
+            {% endwith %}
+                        <h4> توضیحات: </h4>
             {{ post.body|linebreaks }}
             <hr>
+            
+            {% for comment in comments %}
+            <div class="comment">
+            <p class="info">
+            نظر شماره {{ forloop.counter }} توسط {{ comment.name }}
+            {{ comment.created }}
+            </p>
+            {{ comment.body|linebreaks }}
+            </div>
+            {% empty %}
+            <p> هیچ نظری تاکنون ثبت نشده است.</p>
+            {% endfor %}
+            {% if new_comment %}
+            <h2>نظر شما با موفقیت ثبت شد.</h2>
+            {% else %}
+            <h2>ارسال نظر</h2>
+            <form method="post">
+            {{ comment_form.as_p }}
+            {% csrf_token %}
+            <p><input type="submit" value="Add comment"></p>
+            </form>
+            {% endif %}
             <p>
                 <a href="{% url "shop:post_share" post.id %}">
                 این نوشته را با دوستانتان به اشتراک بگذارید.
                 </a>
                 </p>
 
+
+
            {% endblock %}
 
          <H1>   </h1>
         </main>
         <!-- Footer -->
-        <footer class="page-footer variant2 fullboxed">
+        {% comment %} <footer class="page-footer variant2 fullboxed">
             <div class="footer-top">
                 <div class="container">
                     <!-- newsletter -->
@@ -601,7 +631,7 @@
                     </div>
                     <!-- /newsletter -->
                 </div>
-            </div> 
+            </div>  {% endcomment %}
             <br>
             <div class="footer-middle">
                 <div class="container">
