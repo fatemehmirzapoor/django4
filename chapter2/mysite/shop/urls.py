@@ -5,10 +5,10 @@ urlpatterns = [
  # post views
     path('',shop_list, name='shop_list'),
     path('<int:year>/<int:month>/<int:day>/<slug:post>/',
-      shop_detail,
-      name='post_detail'),
+      shop_detail,name='post_detail'),
     path('<int:post_id>/share/',
           post_share, name='post_share'),
+    path('tag/<slug:tag_slug>/',shop_list, name='shop_list_by_tag'),   
  
 
 
