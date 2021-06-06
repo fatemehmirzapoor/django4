@@ -786,6 +786,8 @@
                                     <p class="date">
                                     Published {{ post.publish }} by {{ post.author }}
                                     </p>
+                                    <p class="tags">برچسب‌ها: {{ post.tags.all|join:", " }}</p>
+
                                  <div class="price-box"> <span class="price-container"> <span
                                                             class="price-wrapper"> <span
                                                             class="old-price">   {{post.price}} تومان

@@ -550,9 +550,12 @@
             <h2> <a href="{{ post.get_absolute_url }}">
             {{ post.title }}
             </a> </h2>
+
             <p class="date">
                     Published {{ post.publish }} by {{ post.author }}
             </p>
+            <p class="tags">برچسب‌ها: {{ post.tags.all|join:", " }}</p>
+
             <div class="price-box"> <span class="price-container"> <span
                         class="price-wrapper"> <span
                             class="old-price">   {{post.price}} تومان
@@ -605,7 +608,6 @@
 
            {% endblock %}
 
-         <H1>   </h1>
         </main>
         <!-- Footer -->
         {% comment %} <footer class="page-footer variant2 fullboxed">
@@ -632,7 +634,10 @@
                     <!-- /newsletter -->
                 </div>
             </div>  {% endcomment %}
-            <br>
+                     {% comment %} <H1>   </h1> {% endcomment %}
+
+            <br><br><br>
+
             <div class="footer-middle">
                 <div class="container">
                     <div class="row">
