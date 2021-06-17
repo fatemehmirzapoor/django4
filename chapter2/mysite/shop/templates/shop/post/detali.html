@@ -542,10 +542,8 @@
         </header>
         <main>
          <br> <br> <br> <br>
-
             {% block content %}
-
-            <h1>محصولات</h1>
+             <a href="http://localhost:8000/shop/">   <h1>محصولات</h1></a>
             <div class ="wrapper">
             <h2> <a href="{{ post.get_absolute_url }}">
             {{ post.title }}
@@ -575,17 +573,31 @@
             {% endwith %}
                         <h4> توضیحات: </h4>
             {{ post.body|linebreaks }}
-            <hr>
-            <h2>محصولات مشابه</h2>
-            {% for post in similar_posts %}
-            <p>
-            <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-            </p>
-            {% empty %}
-            محصول مشابه‌ای در حال حاضر وجود ندارد.           
-             {% endfor %}
-             <hr/>
-            <h2> نظرات</h2>
+            <div class="block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Blog Carousel -->
+                            <div class="title">
+                               <h2>محصولات مشابه</h2>
+
+                                <div class="carousel-arrows"></div>
+                            </div>
+                                <hr>
+                                            {% for post in similar_posts %}
+                                            <p>
+                                            <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+                                            </p>
+                                            {% empty %}
+                                            محصول مشابه‌ای در حال حاضر وجود ندارد.           
+                                            {% endfor %}
+                                     </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+           
+            <h2> دیدگاه کاربران</h2>
               <br/>
             {% for comment in comments %}
             <div class="comment">
@@ -601,11 +613,11 @@
             {% if new_comment %}
             <h2>نظر شما با موفقیت ثبت شد.</h2>
             {% else %}
-            <h2>ارسال نظر</h2>
+            <h2>ثبت نظر</h2>
             <form method="post">
             {{ comment_form.as_p }}
             {% csrf_token %}
-            <p><input type="submit" value="Add comment"></p>
+            <p><input type="فرستادن" value="افزودن دیدگاه "></p>
             </form>
             {% endif %}
             <p>
@@ -613,40 +625,12 @@
                 این نوشته را با دوستانتان به اشتراک بگذارید.
                 </a>
                 </p>
-
-
-
            {% endblock %}
+                                <hr/>
+            <br><br><br>
 
         </main>
-        <!-- Footer -->
-        {% comment %} <footer class="page-footer variant2 fullboxed">
-            <div class="footer-top">
-                <div class="container">
-                    <!-- newsletter -->
-                    <div class="newsletter variant2 row">
-                        <div class="col-sm-3">
-                        </div>
-                        <div class="col-sm-9">
-                            <!-- input-group -->
-                            <form action="#">
-                                <div class="input-group">
-                                    <input type="text" class="form-control">
-                                    <span class="input-group-btn">
-											<button class="btn btn-default" type="submit"><i
-                                                    class="icon icon-close-envelope"></i></button>
-											</span>
-                                </div>
-                            </form>
-                            <!-- /input-group -->
-                        </div>
-                    </div>
-                    <!-- /newsletter -->
-                </div>
-            </div>  {% endcomment %}
-                     {% comment %} <H1>   </h1> {% endcomment %}
-
-            <br><br><br>
+    
 
             <div class="footer-middle">
                 <div class="container">
