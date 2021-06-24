@@ -5,6 +5,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +48,7 @@
 
 </head>
 
-<body class="boxed rtl">
+<body     class="boxed rtl">
 <!-- Loader -->
 <div id="loader-wrapper" class="off">
     <div class="cube-wrapper">
@@ -766,35 +767,34 @@
                     </div>
                 </div>
             </div>
-{% block title %}به اشتراک گذاشتن محصولات{% endblock %}
+{% block title %}<h2>  به اشتراک گذاشتن محصولات  </h2>{% endblock %}
 {% block content %}
     {% if sent %}
-    <h1>ایمیل با موفقیت ارسال شد</h1>
+    <h2>ایمیل با موفقیت ارسال شد</h2>
     <p>
     {{ post.title }} با موفقیت ارسل شد به  {{ form.cleaned_data.to }}.
     </p>
     {% else %}
-    <h1>اشتراک "{{ post.title }}" به ایمیل</h1>
+    <h3>اشتراک "{{ post.title }}" به ایمیل</h3>
     <form method="post">
-    {% comment %} {{ form.as_p }} {% endcomment %}
-    <p>    نام ارسال کننده:
-    {{form.name}}   </p>
-   
-    <p>   ایمیل:
-    {{form.email}}    </p>
+        {% comment %} {{ form.as_p }} {% endcomment %}
+        <table cellspacing=”10” style="width:100%"   cellpadding="8"    >
+        
+            <tr><th> نام ارسال کننده :</th> <td>{{form.name}}</td> </tr>
+            <tr><th>ایمیل:</th>     <td> {{form.email}}</td> </tr>
+            <tr><th>شخص دریافت کننده:</th><td>{{form.to}} </td></tr>
+            <tr><th> توضیحات:</th><td>{{form.comments}} </td></tr>
 
-   
-    <p>  شخص دریافت کننده:
-    {{form.to}}    </p>
+        </table>
+        <input type="submit" value="ارسال ایمیل">
+        <br><br>
 
-    
-    <p>   توضیحات:
-    {{form.comments}}   </p>
+<h1></h1>
     {% csrf_token %}
-    <input type="submit" value="Send e-mail">
     </form>
     {% endif %}
 {% endblock %}
+
 </main>
         <!-- /Page Content -->
         <!-- Footer -->
@@ -908,19 +908,7 @@
                                                   class="img-responsive"> </a>
                             </div>
                         </div>
-                        <div class=" col-md-6 col-lg-4">
-                            <div class="bottom-space">
-                                <div class="footer-copyright text-center"> © 2016 Demo Store. All Rights Reserved.</div>
-                                <div class="footer-payment-link text-center">
-                                    <a href="#"><img src="../static/images/payment-logo/icon-pay-1.png" alt=""></a>
-                                    <a href="#"><img src="../static/images/payment-logo/icon-pay-2.png" alt=""></a>
-                                    <a href="#"><img src="../static/images/payment-logo/icon-pay-3.png" alt=""></a>
-                                    <a href="#"><img src="../static/images/payment-logo/icon-pay-4.png" alt=""></a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                       
                 </div>
             </div>
         </footer>
