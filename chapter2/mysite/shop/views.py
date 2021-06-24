@@ -7,6 +7,7 @@ from django.core.mail import send_mail
 from taggit.models import Tag
 from django.db.models import Count
 
+
 def shop_list(request,tag_slug=None):
         object_list = shop.objects.all()
         tag = None

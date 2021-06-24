@@ -565,12 +565,7 @@
             <p>
                 <button class="btn add-to-cart" data-product="789123"><i class="icon icon-cart"></i><span>افزودن به سبد خرید</span></button>
              </p>
-             {% with comments.count as total_comments %}
-            <h2>
-             تعداد نظرات :{{ total_comments }} 
-             {% comment %} comment{{ total_comments|pluralize }} {% endcomment %}
-            </h2>
-            {% endwith %}
+             
                         <h4> توضیحات: </h4>
             {{ post.body|linebreaks }}
             <div class="block">
@@ -579,6 +574,11 @@
                         <div class="col-md-6">
                             <!-- Blog Carousel -->
                             <div class="title">
+                                <p>
+                                    <a href="{% url "shop:post_share" post.id %}">
+                                    این کالا را با دوستانتان به اشتراک بگذارید.
+                                    </a>
+                                    </p>
                                <h2>محصولات مشابه</h2>
 
                                 <div class="carousel-arrows"></div>
@@ -588,6 +588,7 @@
                                             <p>
                                             <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
                                             </p>
+                                            
                                             {% empty %}
                                             محصول مشابه‌ای در حال حاضر وجود ندارد.           
                                             {% endfor %}
@@ -596,42 +597,46 @@
                                 </div>
                             </div>
                         </div>
-           
-            <h2> دیدگاه کاربران</h2>
-              <br/>
-            {% for comment in comments %}
-            <div class="comment">
-            <p class="info">
-            نظر شماره {{ forloop.counter }} توسط {{ comment.name }}
-            {{ comment.created }}
-            </p>
-            {{ comment.body|linebreaks }}
-            </div>
-            {% empty %}
-            <p> هیچ نظری تاکنون ثبت نشده است.</p>
-            {% endfor %}
-            {% if new_comment %}
-            <h2>نظر شما با موفقیت ثبت شد.</h2>
-            {% else %}
-            <h2>ثبت نظر</h2>
-            <form method="post">
-            {{ comment_form.as_p }}
-            {% csrf_token %}
-            <p><input type="فرستادن" value="افزودن دیدگاه "></p>
-            </form>
-            {% endif %}
-            <p>
-                <a href="{% url "shop:post_share" post.id %}">
-                این نوشته را با دوستانتان به اشتراک بگذارید.
-                </a>
-                </p>
-           {% endblock %}
+                        
+                            {% with comments.count as total_comments %}
+                            <h2>
+                            تعداد نظرات :{{ total_comments }} 
+                            {% comment %} comment{{ total_comments|pluralize }} {% endcomment %}
+                            </h2>
+                            {% endwith %}
+                                <br/>
+                                {% for comment in comments %}
+                                <div class="comment">
+                                <p class="info">
+                                نظر شماره {{ forloop.counter }} توسط {{ comment.name }}
+                                {{ comment.created }}
+                                </p>
+                                {{ comment.body|linebreaks }}
+                                </div>
+                                {% empty %}
+                                <p> هیچ نظری تاکنون ثبت نشده است.</p>
+                                {% endfor %}
+                                {% if new_comment %}
+                                <h2>نظر شما با موفقیت ثبت شد.</h2>
+                                {% else %}
+                                <form method="post">
+                                    <h2>ثبت نظر</h2>
+                                <!-- {{ comment_form.as_p }} -->
+                                <table cellspacing=”10” style="width:100%"   cellpadding="8"    >
+                                    <tr><th> نام ارسال کننده :</th> <td>{{comment_form.name}}</td> </tr>
+                                    <tr><th>ایمیل:</th>     <td> {{comment_form.email}}</td> </tr>
+                                    <tr><th> توضیحات:</th><td>{{comment_form.body}} </td></tr>
+                                </table>
+                                {% csrf_token %}
+                                <p><input type="submit" value="افزودن دیدگاه "></p>
+                                </form>
+                                {% endif %}
+                              
+                            {% endblock %}
                                 <hr/>
             <br><br><br>
-
+                                </div>
         </main>
-    
-
             <div class="footer-middle">
                 <div class="container">
                     <div class="row">
