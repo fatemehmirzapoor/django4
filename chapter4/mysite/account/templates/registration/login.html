@@ -16,7 +16,7 @@
         {{ form.as_p }}
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}"  dir="rtl"/>
-        <p dir="rtl"><input type="submit" value="Log-in"></p>
+        <p dir="rtl"><input type="submit" value="وارد شدن "></p>
     </form>
     <p dir="rtl"><a href="{% url "password_reset" %}">رمز عبور خود را فراموش کرده اید؟</a></p>
 </div>
