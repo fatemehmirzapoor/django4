@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}وارد شدن{% endblock %}
+{% block content %}
+<h1>وارد شدن</h1>
+<p>لطفا برای ورود به سیستم از فرم زیر استفاده کنید:</p>
+<form method="post">
+{{ form.as_p }}
+{% csrf_token %}
+<p><input type="submit" value="وارد شدن"></p>
+</form>
+{% endblock %}
