@@ -795,11 +795,13 @@
                                     {% if not forloop.last %}, {% endif %}
                                     {% endfor %}</p>
                                                                         {% comment %} {{ post.tags.all|join:", " }}</p> {% endcomment %}
+                                                          <p>  <img src="{{post.photo}}">  </p>
 
                                  <div class="price-box"> <span class="price-container"> <span
                                                             class="price-wrapper"> <span
                                                             class="old-price">   {{post.price}} تومان
-                                                            </span> <span
+                                                            </span> 
+                                                            <span
                                                             class="special-price">{{post.Discounted_price}} تومان</span> </span>
 															</span>
                                                             <p> تعداد: {{post.count}}   </div>
