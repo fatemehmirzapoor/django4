@@ -549,14 +549,16 @@
         <main>
          <br> <br> <br> <br>
             {% block content %}
+             <div class="carousel-arrows"></div>
+                            
              <a href="http://localhost:8000/shop/">   <h1>محصولات</h1></a>
-            <div class ="wrapper">
+            <div class ="wrapper"  >
             <h2> <a href="{{ post.get_absolute_url }}">
             {{ post.title }}
             </a> </h2>
 
             <p class="date">
-                    Published {{ post.publish }} by {{ post.author }}
+                    منتشرشده {{ post.publish }} توسط {{ post.author }}
             </p>
             {% comment %} <p class="tags">برچسب‌ها: {{ post.tags.all|join:", " }}</p> {% endcomment %}
 
@@ -572,7 +574,7 @@
                 <button class="btn add-to-cart" data-product="789123"><i class="icon icon-cart"></i><span>افزودن به سبد خرید</span></button>
              </p>
              
-                        <h4> توضیحات: </h4>
+              <h4> توضیحات: </h4>
             {{ post.body|linebreaks }}
             <div class="block">
                 <div class="container">

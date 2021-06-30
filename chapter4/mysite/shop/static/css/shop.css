@@ -2,11 +2,14 @@ body {
     margin:0;
     padding:0;
     font-family:helvetica, sans-serif; 
+    padding:10px;
+
 }
 
 a { 
     color:#00abff;
     text-decoration:none; 
+
 }
 
 h1 { 
@@ -17,19 +20,25 @@ h1 {
 h4 { 
     font-weight:normal;
     /* border-bottom:1px solid rgb(250, 100, 133); */
-    padding:0 0 10px 0;
+    /* padding:0 0 10px 0; */
     color: rgb(105, 100, 100);
+    padding:10px;
+
 }
 
 h2 {
     font-weight:normal;
     margin:30px 0 0;
+    padding:10px;
+
 }
 
 #content { 
     float:left;
     width:60%;
     padding:0 0 0 30px; 
+    padding:10px;
+
 }
 
 #sidebar { 
@@ -38,6 +47,8 @@ h2 {
     padding:10px;
     background:#7c7b7e; 
     height:100%;
+    padding:10px;
+
 }
 
 p.date { 
@@ -45,6 +56,8 @@ p.date {
     font-family: georgia, serif;
     font-size: 12px;
     font-style: italic; 
+    padding:10px;
+
 }
 
 /* pagination */
@@ -52,6 +65,8 @@ p.date {
     margin:40px 0; 
     font-weight:bold;
     float:center;
+    padding:10px;
+
 }
 
 /* forms */
@@ -60,6 +75,8 @@ label {
     clear:both;
     color:#333;
     margin-bottom:4px; 
+    padding:10px;
+
 }
 input, textarea { 
     clear:both;
@@ -69,6 +86,8 @@ input, textarea {
     border:0;
     padding:6px 10px;
     font-size:12px;
+    padding:10px;
+
 }
 input[type=submit] {
     font-weight:bold;
@@ -77,12 +96,15 @@ input[type=submit] {
     padding:10px 20px;
     font-size:14px;
     text-transform:uppercase; 
+    padding:10px;
+
 }
 .errorlist { 
     color:#cc0033;
     float:left;
     clear:both;
     padding-left:10px; 
+
 }
 
 /* comments */
@@ -90,13 +112,13 @@ input[type=submit] {
     padding:10px;
 }
 .comment:nth-child(even) {
-    background:#cc0033;
-    color:rgb(255, 255, 255);
+    background:#636061;
+    color:rgb(0, 0, 0);
 
 }
 .comment .info {
     font-weight:bold;
     font-size:12px;
-    color:rgb(8, 0, 0);
+    color:rgb(08, 0, 0);
 }
 

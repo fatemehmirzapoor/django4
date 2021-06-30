@@ -310,15 +310,15 @@
                             <div class="dropdown-container right">
                                 <div class="title"> مشتریان ثبت شده</div>
                                 <div class="top-text"> اگر در سایت ما حساب کاربری دارید ، لطفاً وارد شوید.</div>
-                                <!-- form -->
-                                <form action="#">
-                                    <input type="text" class="form-control" placeholder="ایمیل*">
-                                    <input type="text" class="form-control" placeholder="پسورد*">
-                                    <button type="submit" class="btn">ورود</button>
+                                   <form action="#">
+                                    {% comment %} <input type="text" class="form-control" placeholder="ایمیل*">
+                                    <input type="text" class="form-control" placeholder="پسورد*"> {% endcomment %}
+                                       <div class="bottom-text"> <a href="http://localhost:8000/account/login/"> ورود </a></div>
+
                                 </form>
                                 <!-- /form -->
                                 <div class="title">یا</div>
-                                <div class="bottom-text">ساخت حساب<a href="account-create.html"> کاربر جدید </a></div>
+                                <div class="bottom-text">ساخت حساب<a href="http://localhost:8000/account/register/"> کاربری جدید </a></div>
                             </div>
                         </div>
                         <!-- /Header Account -->
@@ -786,7 +786,7 @@
                                 </a> </h2>
                                 
                                     <p class="date">
-                                    Published {{ post.publish }} by {{ post.author }}
+                                    منتشر شده{{ post.publish }} توسط {{ post.author }}
                                     </p>
                                     <p class="tags">
                                     برچسب‌ها: 
