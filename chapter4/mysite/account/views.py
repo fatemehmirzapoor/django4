@@ -6,6 +6,8 @@ from .forms import LoginForm,UserRegistrationForm,\
                                         UserEditForm,ProfileEditForm
 from django.contrib.auth.decorators import login_required
 from .models import Profile
+from django.contrib import messages
+
 
 
 def user_login(request):
@@ -46,12 +48,15 @@ def register(request):
             # Save the User object
             new_user.save()
             # Create the user profile
+            messages.success(request, 'Profile updated ''successfully')
 
             Profile.objects.create(user=new_user)
 
             return render(request,
                             'account/register_done.html',
                             {'new_user': new_user})
+        else:
+                messages.error(request, 'Error updating your profile')
     else:
         user_form = UserRegistrationForm()
     return render(request,

@@ -4,7 +4,12 @@
 <h1>وارد شدن</h1>
 <p>لطفا برای ورود به سیستم از فرم زیر استفاده کنید:</p>
 <form method="post">
-{{ form.as_p }}
+{% comment %} {{ form.as_p }} {% endcomment %}
+ <table style="width:100%"   cellpadding="8"    >
+                                    <tr ><th>  نام کاربری:</th> <td>{{ form.username}}</td> </tr>
+                                    <tr ><th>رمز عبور:</th>     <td> {{ form.password}}</td> </tr>
+                                    
+</table>
 {% csrf_token %}
 <p><input type="submit" value="وارد شدن"></p>
 </form>

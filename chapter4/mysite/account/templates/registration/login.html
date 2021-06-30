@@ -13,7 +13,12 @@
 {% endif %}
 <div class="login-form" dir="rtl">
     <form action="{% url 'login' %}" method="post" dir="rtl" >
-        {{ form.as_p }}
+        {% comment %} {{ form.as_p }} {% endcomment %}
+        <table style="width:100%"   cellpadding="8"    >
+                                    <tr ><th>  نام کاربری:</th> <td>{{ form.username}}</td> </tr>
+                                    <tr ><th>رمز عبور:</th>     <td> {{ form.password}}</td> </tr>
+                                    
+</table>
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}"  dir="rtl"/>
         <p dir="rtl"><input type="submit" value="وارد شدن "></p>
