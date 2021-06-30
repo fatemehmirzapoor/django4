@@ -4,7 +4,7 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
 from taggit.managers import TaggableManager
-from PIL import Image
+# from PIL import Image
 
 
 class shop(models.Model):
@@ -20,7 +20,7 @@ class shop(models.Model):
     price = models.IntegerField(default=1000)
     Discounted_price = models.IntegerField(default=1000)
     count = models.IntegerField(default=1)
-    photo = models.ImageField(upload_to='users/%Y/%m/%d/',blank=True)
+    # photo = models.ImageField(upload_to='users/%Y/%m/%d/',blank=True)
 
     # status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
 

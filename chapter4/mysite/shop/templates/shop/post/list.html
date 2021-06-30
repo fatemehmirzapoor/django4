@@ -797,7 +797,7 @@
                                     {% if not forloop.last %}, {% endif %}
                                     {% endfor %}</p>
                                                                         {% comment %} {{ post.tags.all|join:", " }}</p> {% endcomment %}
-                                                          <p>  <img src="{{post.photo}}">  </p>
+                                                          {% comment %} <p>  <img src="{{post.photo}}">  </p> {% endcomment %}
 
                                  <div class="price-box"> <span class="price-container"> <span
                                                             class="price-wrapper"> <span
