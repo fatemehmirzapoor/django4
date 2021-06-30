@@ -278,15 +278,16 @@
                             <div class="dropdown-container right">
                                 <div class="title"> مشتریان ثبت شده</div>
                                 <div class="top-text"> اگر در سایت ما حساب کاربری دارید ، لطفاً وارد شوید.</div>
-                                <!-- form -->
+                                    <!-- form -->
                                 <form action="#">
-                                    <input type="text" class="form-control" placeholder="ایمیل*">
-                                    <input type="text" class="form-control" placeholder="پسورد*">
-                                    <button type="submit" class="btn">ورود</button>
+                                    {% comment %} <input type="text" class="form-control" placeholder="ایمیل*">
+                                    <input type="text" class="form-control" placeholder="پسورد*"> {% endcomment %}
+                                       <div class="bottom-text"> <a href="http://localhost:8000/account/login/"> ورود </a></div>
+
                                 </form>
                                 <!-- /form -->
                                 <div class="title">یا</div>
-                                <div class="bottom-text">ساخت حساب<a href="account-create.html"> کاربر جدید </a></div>
+                                <div class="bottom-text">ساخت حساب<a href="http://localhost:8000/account/register/"> کاربری جدید </a></div>
                             </div>
                         </div>
                         <!-- /Header Account -->
@@ -314,6 +315,10 @@
                         <ul class="nav">
                             <li class="simple-dropdown">
                                 <a href="http://localhost:8000/main/">صفحه اصلی</a>
+                            </li>
+                            </li>
+                                <li class="simple-dropdown">
+                                <a href="http://localhost:8000/account/"> داشبورد من  </a>
                             </li>
 
                             <li class="mega-dropdown">
@@ -591,14 +596,14 @@
                 <h3>اشتراک "{{ post.title }}" به ایمیل</h3>
                 <form method="post">
                     {% comment %} {{ form.as_p }} {% endcomment %}
-                 <table dir="rtl " ;cellspacing="10"; style="width:100%"  ;    >
+                 <table dir="rtl "  style="width:50%"  ;    >
                             <tr ><th > نام ارسال کننده :</th> <td>{{form.name}}</td> </tr>
                             <tr ><th>ایمیل:</th>     <td> {{form.email}}</td> </tr>
                             <tr ><th>شخص دریافت کننده:</th><td>{{form.to}} </td></tr>
                             <tr ><th> توضیحات:</th><td>{{form.comments}} </td></tr>
                 </table>
 
-                <input type="submit" value="ارسال ایمیل">
+               <p style="width:50%"> <input type="submit" value="ارسال ایمیل"> </p>
                 <br><br>
 
                <h1></h1>
@@ -664,8 +669,8 @@
                                 </div>
                                 <div class="collapsed-content">
                                     <ul class="marker-list">
-                                        <li> <a href="account-create.html"> حساب من </a> </li>
-                                        <li> <a href="login.html"> ورود به سیستم </a> </li>
+                                         <li> <a href="http://127.0.0.1:8000/account/edit/"> حساب من </a> </li>
+                                        <li> <a href="http://127.0.0.1:8000/account/login/"> ورود به سیستم </a> </li>
                                         <li> <a href="cart.html"> سبد خرید من </a> </li>
                                         <li> <a href="wishlist.html"> لیست خواسته های من </a> </li>
                                         <li> <a href="search.html"> شرایط جستجو </a> </li>

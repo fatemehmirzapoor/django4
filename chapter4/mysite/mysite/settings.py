@@ -28,7 +28,7 @@ AUTHENTICATION_BACKENDS = [
  'django.contrib.auth.backends.ModelBackend',
  'account.authentication.EmailAuthBackend',
  'social_core.backends.google.GoogleOAuth2',
-
+ 
 ]
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -57,10 +57,6 @@ INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'social_django',
     'django_extensions',
-
-
-
-
 ]
 
 MIDDLEWARE = [
@@ -78,6 +74,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -86,7 +83,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media', #<-- HERE
+
             ],
+            
         },
     },
 ]

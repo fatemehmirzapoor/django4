@@ -91,10 +91,12 @@ input[type=submit] {
 }
 .comment:nth-child(even) {
     background:#cc0033;
+    color:rgb(255, 255, 255);
+
 }
 .comment .info {
     font-weight:bold;
     font-size:12px;
-    color:#666;
+    color:rgb(8, 0, 0);
 }
 
